@@ -21,6 +21,11 @@ export class EstadisticaComponent implements OnInit {
   doughnutChartLabels: string[] = ['Ingresos', 'Egresos'];
   doughnutChartData: number[] = [0, 0];
   doughnutChartType = 'doughnut';
+  doughnutChartColors: any[] = [
+    {
+      backgroundColor: ['rgba(40,167,69,0.6)', 'rgba(255,0,0,0.6)'],
+    }
+  ];
 
   constructor( private store: Store<AppState> ) { }
 
